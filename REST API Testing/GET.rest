@@ -2,23 +2,23 @@
 GET http://localhost:5000/todos
 
 ### GET a todo
-GET http://localhost:5000/todo/3
+GET http://localhost:5000/todo/21
 
 ### POST a todo
 POST http://localhost:5000/todos
 Content-Type: application/json
 
 {
-    "description": "opera van java"
+    "description": "random random aja"
 }
 
 ### PUT a todo (UPDATE)
-PUT http://localhost:5000/todo/20
+PUT http://localhost:5000/todo/21
 Content-Type: application/json
 
 {
-    "description": "roby roy"
+    "description": "opera van jawa"
 }
 
 ### delete a todo
-DELETE http://localhost:5000/todo/13
+DELETE http://localhost:5000/todo/23
