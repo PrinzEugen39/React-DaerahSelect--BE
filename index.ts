@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
-// import routes from "./src/routes/routes";
 import router from "./src/routes/routes";
+import cors from 'cors';
 
 async function start(): Promise<void> {
   try {
@@ -10,8 +10,11 @@ async function start(): Promise<void> {
     const app = express();
     const PORT = process.env.APP_PORT;
 
+    app.use(cors());
     app.use(express.json());
     app.use(router);
+
+
 
     app.listen(PORT, () => {
       console.log("Server started on port " + PORT);
